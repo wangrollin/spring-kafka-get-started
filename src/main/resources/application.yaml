@@ -1,0 +1,8 @@
+spring:
+    kafka:
+        properties:
+            schema.registry.url: http://localhost:8081
+        consumer:
+            auto-offset-reset: earliest
+        producer:
+            value-serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
